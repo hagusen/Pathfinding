@@ -136,7 +136,7 @@ public class Grid : MonoBehaviour
         Gizmos.DrawWireCube(new Vector3(gridWorldsize.x / 2f, 0, gridWorldsize.y / 2f), new Vector3(gridWorldsize.x, 2, gridWorldsize.y));
 
 
-        if (a && showClosedList) {
+        if (showClosedList) {
             if (closedPath != null) {
 
                 foreach (var node in closedPath) {

@@ -33,9 +33,10 @@ public class A_Star : MonoBehaviour
         var start = grid.NodeFromWorldPoint(startPos);
         var end = grid.NodeFromWorldPoint(endPos);
 
-        closedList.Clear();
+        //closedList.Clear();
         //openList.Clear();
-
+        List<Node> openList = new List<Node>();
+        List<Node> closedList = new List<Node>();
 
         openList.Add(start);
 
@@ -54,7 +55,6 @@ public class A_Star : MonoBehaviour
             if (current == end) {
                 //retrace
                 Retrace(start, end);
-                grid.closedPath = closedList;
                 //Debug.Log("Done");
                 return;
             }
@@ -102,6 +102,7 @@ public class A_Star : MonoBehaviour
         }
         path.Reverse();
         grid.testPath = path;
+        grid.closedPath = closedList;
     }
 }
 

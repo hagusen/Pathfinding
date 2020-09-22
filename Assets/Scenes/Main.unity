@@ -450,8 +450,8 @@ MonoBehaviour:
   - {fileID: 1895809520}
   CostObjects:
   - {fileID: 1092929254}
-  costs: 64000000
-  gridWorldsize: {x: 88, y: 54}
+  costs: c8000000
+  gridWorldsize: {x: 100, y: 100}
   resolution: 1
   testCube: {fileID: 660050320}
 --- !u!4 &409636097
