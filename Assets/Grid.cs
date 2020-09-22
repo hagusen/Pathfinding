@@ -131,11 +131,11 @@ public class Grid : MonoBehaviour
     public List<Node> testPath = new List<Node>();
 
     public List<Node> closedPath = new List<Node>();
-
+    
     void OnDrawGizmos() {
         Gizmos.DrawWireCube(new Vector3(gridWorldsize.x / 2f, 0, gridWorldsize.y / 2f), new Vector3(gridWorldsize.x, 2, gridWorldsize.y));
 
-
+        
         if (showClosedList) {
             if (closedPath != null) {
 
