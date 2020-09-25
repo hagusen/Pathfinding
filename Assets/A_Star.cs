@@ -17,7 +17,7 @@ public class A_Star : MonoBehaviour
         grid = GetComponent<Grid>();
         openList = new List<Node>();
         closedList = new List<Node>();
-        path = new List<Node>();
+        //path = new List<Node>();
     }
     private void Update() {
 
@@ -35,8 +35,8 @@ public class A_Star : MonoBehaviour
 
         //closedList.Clear();
         //openList.Clear();
-        List<Node> openList = new List<Node>();
-        List<Node> closedList = new List<Node>();
+        //List<Node> openList = new List<Node>();
+        //List<Node> closedList = new List<Node>();
 
         openList.Add(start);
 
@@ -94,7 +94,7 @@ public class A_Star : MonoBehaviour
 
     List<Node> path;
     void Retrace(Node start, Node end) {
-
+        path = new List<Node>();
         var current = end;
         while (current != start) {
             path.Add(current);
